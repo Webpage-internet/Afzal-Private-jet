@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #87CEEB; /* Sky blue */
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+/* Sky Background */
+.sky {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #1e3c72, #2a5298); /* Gradient sky */
+}
+
+/* Jet Image */
+#jetImage {
+    width: 200px;
+    position: absolute;
+    bottom: 100vh; /* Starts off-screen */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 3s ease-in-out, bottom 3s ease-in-out;
+}
+
+/* Jet Landing Animation */
+.landing {
+    bottom: 10px;
+}
+
+/* Jet Takeoff Animation */
+.takeoff {
+    transform: translate(150vw, -120vh) rotate(20deg);
+    opacity: 0;
+}
+
+/* Welcome Message */
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    display: none;
+}
+
+/* Button */
+button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background: gold;
+    color: black;
+    border-radius: 5px;
+}
